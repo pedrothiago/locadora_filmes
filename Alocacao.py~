@@ -6,24 +6,13 @@ REGULAR = 0
 NOVA_RELEASE = 1
 
 class Alocacao:
-    
     def __init__(self,filme, diasAlocado): #filme de tipo Filme
         self._filme = filme #Tipo filme
         self._diasAlocados = diasAlocado
-    
     def getDiasAlocados(self):
         return self._diasAlocados
-    
     def getFilme(self):
         return self._filme
-    def getCharge(self):
-        result = 0.0
-        location = iter(self.alocacoes)
-        for each in location:
-            eachResult = float(cada.getTotalCharge())
-            result = eachResult + result
-        #adicionar rodape do relatorio
-        resultado = resultado + "Quantia devida é "+ str(totalQuantidade)
     def getTotalCharge(self):
         estaQuantidade = 0.0
         #cada = next(alocacoes) #cada tipo alocacao

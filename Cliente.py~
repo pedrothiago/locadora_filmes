@@ -47,7 +47,7 @@ class Cliente():
             resultado = resultado + ' '+cada.getFilme().getTitulo()+' '+ str(estaQuantidade)+'\n'
             totalQuantidade = estaQuantidade + totalQuantidade
         #adicionar rodape do relatorio
-        resultado = resultado + "Quantia devida é "+ str(cada.getCharge())
+        resultado = resultado + "Quantia devida é "+ str(totalQuantidade)
         return resultado
 
 if __name__ == '__main__':
